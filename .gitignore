@@ -13,7 +13,7 @@
 
 # Ignore secret and api access token
 /config/database.yml
-/config/initializers/access_token.rb
+/config/initializers/secret_token.rb
 
 # Ignore public images
 /public/images

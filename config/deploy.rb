@@ -287,13 +287,13 @@ DocumentRoot #{File.join(deploy_to, 'current', 'public')}
   end
 
   
-  task :access_token, :role => :app do
-    system "rsync -vr --exclude='.DS_Store' config/initializers/access_token.rb #{user}@#{remote_host}:#{release_path}/config/initializers/"
+  task :secret_token, :role => :app do
+    system "rsync -vr --exclude='.DS_Store' config/initializers/secret_token.rb #{user}@#{remote_host}:#{release_path}/config/initializers/"
   end
  
 end
 
 # Callbacks
 after 'deploy:setup', 'deploy:setup_shared_path'
-after 'deploy:finalize_update', 'deploy:access_token', "deploy:precompile"
+after 'deploy:finalize_update', 'deploy:secret_token', "deploy:precompile"
 after 'deploy:create_symlink', "deploy:tmp_permissions", "deploy:db:migrate"
