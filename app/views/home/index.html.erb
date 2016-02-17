@@ -1,0 +1,245 @@
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Freelance tecnológico. Full stack developer en Ruby on Rails.</div>
+            <div class="intro-heading">¿Qué problema necesitas resolver?</div>
+            <a href="#about" class="page-scroll btn btn-xl">Lo que puedo hacer por ti</a>
+            <%= link_to "Cuéntame tu problema", "#contact", :class => "page-scroll btn btn-xl" %>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Apasionado de la tecnología 24 horas al día</h2>
+                <h3 class="section-subheading text-muted curriculum">Soy Juan José Cano-Cortés Cartagena. Nacido en 1971, llevo desde los 15 años utilizando 
+                ordenadores para jugar, trabajar y experimentar.<br>
+                He trabajado durante 17 años en empresas tecnológicamente punteras en sectores como la cartografía digital y el marketing.<br>
+                He creado un par de empresas de desarrollo de software propio y para terceros.<br>
+                Y he ganado un hackaton.<br>
+                Puedes ver <a href="http://bit.ly/1P6ofG6">mi perfil completo en LinkedIn</a>.<br><br>
+                Ahora, utilizo mis conocimientos y experiencia como freelance de desarrollo y de consultoría, abarcando un amplio rango de tecnologías.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <%= image_tag "about/code.png", :class => "img-circle img-responsive", :alt => "" %>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>DESARROLLO WEB</h4>
+                                <h4 class="subheading">Landing pages, productos mínimos viables, prototipos, webs corporativas</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">HTML, CSS, jQuery, Bootstrap, responsive design, Wordpress</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <%= image_tag "about/backend.jpg", :class => "img-circle img-responsive", :alt => "" %>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>DESARROLLO BACK-END</h4>
+                                <h4 class="subheading">APIs, bases de datos, big data</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">SQL Server, PostgreSQL, MySQL, MVC, Ruby on Rails, C#, Solr, Elasticsearch, Redis, Social APIs</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <%= image_tag "about/mobile.png", :class => "img-circle img-responsive", :alt => "" %>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>APLICACIONES MÓVILES</h4>
+                                <h4 class="subheading">Apps corporativas, juegos, utilidades</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">iOS, Android, Java, Objective-C, Mobincube</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <%= image_tag "about/cpd.jpg", :class => "img-circle img-responsive", :alt => "" %>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Dirección técnica</h4>
+                                <h4 class="subheading">Arquitecturas de software, escalabilidad, servicios cloud</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">AWS, Heroku, microservicios, APIs</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-image">
+                        <div class="timeline-image">
+                            <%= image_tag "about/marketing.png", :class => "img-circle img-responsive", :alt => "" %>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Marketing online</h4>
+                                <h4 class="subheading">Analítica web, SEO, ASO, Community manager</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Google Analytics, AdMob, AdSense, AdWords</p>
+                            </div>
+                        </div>
+                    </li>                    
+                </ul>                
+            </div>              
+        </div>
+        <div class="row">
+            <div class="col-lg-12 btn-message text-center">
+              <%= link_to "Cuéntame tu problema", "#contact", :class => "page-scroll btn btn-xl" %>
+            </div>
+        <div>
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Trabajos</h2>
+                <h3 class="section-subheading text-muted">Estos son algunos de los proyectos que he realizado</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="<%= prediciendo_path %>" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <span class="glyphicon glyphicon-zoom-in zoom" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <%= image_tag "portfolio/prediciendo1.png", :class => "img-responsive", :alt => "" %>
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Prediciendo.com</h4>
+                    <p class="text-muted">Web que permite descubrir si las predicciones que realizan las instituciones se cumplen o no.</p>
+                </div>
+            </div>            
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="<%= metirium_path %>" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <span class="glyphicon glyphicon-zoom-in zoom" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <%= image_tag "portfolio/metirium1.png", :class => "img-responsive", :alt => "" %>
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Metirium.com</h4>
+                    <p class="text-muted">Aplicación por suscripción que permite registrar, analizar y representar muestras de datos procedentes de cualquier fuente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="<%= finderforperiscope_path %>" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <span class="glyphicon glyphicon-zoom-in zoom" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <%= image_tag "portfolio/periscope3.webp", :class => "img-responsive", :alt => "" %>                    
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Finder for Periscope</h4>
+                    <p class="text-muted">App móvil que permite realizar búsquedas por palabras en la red social Periscope.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="<%= turismovital_path %>" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <span class="glyphicon glyphicon-zoom-in zoom" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <%= image_tag "portfolio/turismovital1.png", :class => "img-responsive", :alt => "" %>
+                </a>
+                <div class="portfolio-caption">
+                    <h4>TurismoVital.com</h4>
+                    <p class="text-muted">Marketplace de actividades turísticas no convencionales.</p>
+                </div>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-lg-12 btn-message text-center">
+              <%= link_to "Cuéntame tu problema", "#contact", :class => "page-scroll btn btn-xl" %>
+            </div>
+        <div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contacta conmigo</h2>
+                <h3 class="section-subheading text-muted">Explica lo más detalladamente posible cual es tu necesidad o deja tu teléfono o tu correo y me pondré en contacto contigo lo antes posible.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <%= form_for @contact do |f| %>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <%= f.text_field :name, :class => "form-control", :placeholder => "Tu nombre *", :required => true, :data => { :'validation-required-message' => "Por favor, introduce tu nombre."} %>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <%= f.text_field :email, :class => "form-control", :placeholder => "Tu correo *", :required => true, :data => { :'validation-required-message' => "Por favor, introduce tu dirección de correo."} %>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <%= f.text_field :phone, :class => "form-control", :placeholder => "Tu teléfono *", :required => true, :data => { :'validation-required-message' => "Por favor, introduce tu teléfono."} %>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <%= f.text_area :message, :class => "form-control", :placeholder => "Tu mensaje *", :required => true, :data => { :'validation-required-message' => "Por favor, introduce tu mensaje."} %>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Enviar mensaje</button>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<%= javascript_include_tag "classie" %>
+<%= javascript_include_tag "cbpAnimatedHeader.min" %>
+
+<!-- Contact Form JavaScript -->
+<%= javascript_include_tag "jqBootstrapValidation" %>
+<%= javascript_include_tag "contact_me" %>
+
