@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 gem 'pg'
+gem 'rake', '10.4.2'
+gem "net-ssh", "2.7.0"
 
 
 # Gems used only for assets and not required
