@@ -17,3 +17,4 @@
 
 # Ignore public images
 /public/images
+/vendor/cache
