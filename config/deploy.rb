@@ -294,6 +294,6 @@ DocumentRoot #{File.join(deploy_to, 'current', 'public')}
 end
 
 # Callbacks
-after 'deploy:setup', 'deploy:setup_shared_path'
+after 'deploy:setup', 'deploy:setup_shared_path', "deploy:db:sync_yaml"
 after 'deploy:finalize_update', 'deploy:secret_token', "deploy:precompile"
 after 'deploy:create_symlink', "deploy:tmp_permissions", "deploy:db:migrate"
