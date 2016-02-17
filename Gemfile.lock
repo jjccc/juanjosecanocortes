@@ -144,6 +144,7 @@ DEPENDENCIES
   net-ssh (= 2.7.0)
   pg
   rails (= 3.2.13)
+  rake (= 10.5.0)
   rvm-capistrano (~> 1.2.7)
   sass-rails (~> 3.2)
   therubyracer
