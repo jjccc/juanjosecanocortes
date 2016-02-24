@@ -1,9 +1,9 @@
 class ContactsController < ApplicationController
-
+  layout false
+  
   def index
     authenticate
     @contacts = Contact.order("created_at desc")
-    render :layout => false
   end
   
   def create 
