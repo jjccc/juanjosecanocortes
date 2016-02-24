@@ -12,20 +12,27 @@
 
             <div class="col-md-4">
 
-                <ul class="list-inline social-buttons">
+                <ul class="list-inline ">
 
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-
+                    <li>                      
+                      <%= link_to image_tag(image_path("social/twitter.png"), :size => "40x40"), 
+                                  "https://twitter.com/jjcanocortes", :class => "twitter-follow-button", 
+                                  :title => "Seguirme en Twitter", 
+                                  :"data-show-count" => "false", 
+                                  :"data-lang" => "es", 
+                                  :rel => "nofollow" %>
                     </li>
 
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-
+                    <li>
+                      <%= link_to image_tag(image_path("social/linkedin.png"), :size => "40x40"), 
+                                  "http://bit.ly/1P6ofG6", :class => "twitter-follow-button", 
+                                  :title => "Mi perfil en LinkedIn", 
+                                  :"data-show-count" => "false", 
+                                  :"data-lang" => "es", 
+                                  :rel => "nofollow" %>
                     </li>
 
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-
-                    </li>
-
+                    
                 </ul>
 
             </div>
