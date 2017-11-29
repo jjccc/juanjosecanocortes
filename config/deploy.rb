@@ -289,6 +289,7 @@ DocumentRoot #{File.join(deploy_to, 'current', 'public')}
   
   task :secret_token, :role => :app do
     system "rsync -vr --exclude='.DS_Store' config/initializers/secret_token.rb #{user}@#{remote_host}:#{release_path}/config/initializers/"
+    system "rsync -vr --exclude='.DS_Store' config/application.yml #{user}@#{remote_host}:#{release_path}/config/"
   end
  
 end
