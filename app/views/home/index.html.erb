@@ -254,7 +254,7 @@
   $(document).ready(function(){
 
     $("#submit-button").on("click", function(){
-      $("#contact_captcha_response")
+      $("#contact_captcha_response").val($("#g-recaptcha-response").val());
     });
     
   });
