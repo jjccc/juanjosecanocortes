@@ -13,7 +13,6 @@ class ContactsController < ApplicationController
       if verify_recaptcha(model: @contact, response: params["contact"]["captcha_response"]) && @contact.save
         render :json => @contact.as_json, :status => 200 and return
       else
-        Rails.logger.info "------------------#{params.as_json}"
         render :json => nil, :status => 500 and return
       end
     end

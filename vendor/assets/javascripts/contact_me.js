@@ -12,6 +12,7 @@ $(function() {
             var email = $("input#contact_email").val();
             var phone = $("input#contact_phone").val();
             var message = $("textarea#contact_message").val();
+            var captcha_response = $("input#contact_captcha_response").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -24,7 +25,8 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message }
+                    message: message,
+                    captcha_response: captcha_response }
                 },
                 cache: false,
                 success: function() {
