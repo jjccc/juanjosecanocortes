@@ -201,6 +201,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <%= form_for @contact do |f| %>
+                    <%= f.hidden_field :captcha_response %>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -228,7 +229,7 @@
                         </div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Enviar mensaje</button>
+                            <button type="submit" class="btn btn-xl" id="submit-button">Enviar mensaje</button>
                         </div>
                     </div>
                     
@@ -248,3 +249,14 @@
 <%= javascript_include_tag "jqBootstrapValidation" %>
 <%= javascript_include_tag "contact_me" %>
 
+<%= javascript_tag do %>
+  
+  $(document).ready(function(){
+
+    $("#submit-button").on("click", function(){
+      $("#contact_captcha_response")
+    });
+    
+  });
+  
+<% end %>

@@ -1,4 +1,4 @@
 class Contact < ActiveRecord::Base
-  attr_accessible :email, :message, :name, :phone, :captcha_error
-  attr_accessor :captcha_error
+  attr_accessible :email, :message, :name, :phone, :captcha_response
+  attr_accessor :captcha_response
 end

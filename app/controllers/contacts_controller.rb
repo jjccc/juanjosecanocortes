@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
 
     respond_to do |format|
-      if verify_recaptcha(model: @contact) && @contact.save
+      if verify_recaptcha(model: @contact, response: params["contact"]["captcha_response"]) && @contact.save
         render :json => @contact.as_json, :status => 200 and return
       else
         Rails.logger.info "------------------#{params.as_json}"
