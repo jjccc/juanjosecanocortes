@@ -5,6 +5,8 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'rake', '10.5.0'
 gem "net-ssh", "2.7.0"
+gem "recaptcha", require: "recaptcha/rails"
+gem "figaro"
 
 
 # Gems used only for assets and not required
