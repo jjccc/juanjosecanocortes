@@ -10,7 +10,6 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
 
     respond_to do |format|
-      Rails.logger.info "-----> #{ENV["RECAPTCHA_SECRET_KEY"]}"
       if verify_recaptcha(model: @contact) && @contact.save
         render :json => @contact.as_json, :status => 200 and return
       else
